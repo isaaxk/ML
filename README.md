@@ -1,4 +1,5 @@
-Introduction
+### Introduction:
+
 Chaque jour, des milliards de transactions par carte bancaire sont effectuées dans le monde.
 Avec l’explosion des paiements en ligne via smartphones et applications, il devient essentiel de pouvoir détecter rapidement les fraudes.
 
@@ -10,7 +11,7 @@ Plusieurs modèles ont été testés afin de choisir celui offrant les meilleure
 
 
 
-Objectif du projet
+### Objectif du projet
 L'objectif est clair :
 Minimiser les fraudes sans pour autant bloquer trop de transactions authentiques.
 
@@ -30,10 +31,10 @@ Gradient Boosting
 
 
 
-Données utilisées
+### Données utilisées:
 Le dataset provient de Kaggle et contient les transactions bancaires de clients européens sur deux jours de septembre 2013.
 
-Quelques caractéristiques importantes du dataset :
+#### Quelques caractéristiques importantes du dataset :
 
 Time : secondes écoulées depuis la première transaction.
 
@@ -48,7 +49,7 @@ Les autres variables (V1 à V28) sont issues d'une PCA pour protéger les donné
 
 
 
-Préparation des données
+### Préparation des données
 
 Avant d'entraîner les modèles, j’ai effectué :
 
@@ -60,7 +61,7 @@ Un équilibrage des classes (fraudes rares) avec SMOTE pour éviter le biais du 
 
 
 
-Méthodes d'évaluation
+### Méthodes d'évaluation
 Pour évaluer les performances, plusieurs métriques ont été utilisées :
 
 Accuracy : pourcentage de bonnes prédictions.
@@ -79,7 +80,7 @@ Matrice de confusion : visualisation des vrais positifs, faux positifs, vrais n�
 
 
 
-Résultats obtenus
+### Résultats obtenus
 Parmi les modèles testés :
 
 AdaBoost Classifier a atteint le meilleur rappel (91,87%), détectant 147 fraudes sur 160.
@@ -97,7 +98,7 @@ Mais beaucoup moins de faux positifs (0,02%).
 
 
 
-Conclusion
+### Conclusion
 En détection de fraude, tout est question d'équilibre :
 Faut-il détecter un maximum de fraudes quitte à avoir plus de faux positifs ?
 Ou faut-il réduire les alertes inutiles mais risquer de laisser passer quelques fraudes ?
